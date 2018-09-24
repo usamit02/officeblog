@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+header {display:flex;}
+#indexdiv table,#indexdiv td,#indexdiv th {border-collapse: collapse;border:1px solid #333;}
+.indeximg{max-width:150px;max-height:100px;}
+th{text-align:center;}
+.updown{display:flex;}
+#pager{
+  display:flex;flex-wrap: wrap;padding: 10px 10px;
+}
+.pagerbutton{
+font-size:1em;
+width:20px;
+padding:5px 10px 5px 10px;
+text-align:center;
+border:2px solid;
+border-color:#aaaaaa #444444 #444444 #aaaaaa;
+background:#49a9d4;
+}
+#currentpage{
+font-size:1em;  
+width:20px;
+padding:5px 10px 5px 10px;
+text-align:center;
+background:white;
+}
+.pagerbutton:hover{
+background:#777777;
+}
+
+@media screen and (max-width: 1000px){
+ header{display:block;}
+ .updown{display:block;}
+ .udtext{
+   height:20px;
+   padding:10px 10px 10px 10px;
+   margin: 0px 10px 0px 10px; 
+}
+.pagerbutton{
+  width:30px;height: 30px;
+  padding:10px 10px 10px 10px;
+  margin: 0px 10px 0px 10px; 
+}
+#currentpage{
+  width:30px;
+  padding:10px 10px 10px 10px;
+  margin: 0px 10px 0px 10px; 
+  }
+ }

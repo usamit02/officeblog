@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "gloomy.jp-officeblog"
+AuthUserFile /home/users/1/gloomy.jp-officeblog/web/private_ini/.htpasswd
+require valid-user

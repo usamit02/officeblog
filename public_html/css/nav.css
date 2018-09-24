@@ -1,0 +1,87 @@
+nav ul {
+  display: none;
+}
+nav .f1{
+  display:block;
+   }
+nav .ex{
+  margin-right: 20px;
+  color:green ;
+}
+
+nav li {
+  list-style: none;
+  margin-left: -20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+  border:2px solid;
+  border-color:skyblue mediumblue darkblue skyblue;
+  background:lightsteelblue;
+  
+}
+nav .fl1{
+  background:lightgreen;flex:1 1 50px;
+}
+nav .fl3{
+  background:lightyellow;
+}
+nav {
+  width: 312px;
+  right:0;
+  transform: translate(312px);
+  height: 0;
+  transition: all 0.2s;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+ }
+nav.open {
+  transform: translate(0); 
+ }
+ #menu {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 42px;
+  right:20px;
+  color: #333;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  z-index: 1001;
+  text-align: center;
+  outline: none;
+}
+/*   ハンバーガーボタン3本線   */
+#menu span.bar {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0;
+  transition: all 0.2s;
+  transform-origin: 0 0;
+}
+#menu .close {letter-spacing: 0.08em;display: none;}
+#menu .menu {display: block;}
+/*  メニューアクティブ時  */
+#menu.active span.bar {width: 49px;}
+#menu.active .bar1 {transform: rotate(30deg);}
+#menu.active .bar2 {opacity: 0;}
+#menu.active .bar3 {transform: rotate(-30deg);}
+#menu.active .menu {display: none;}
+#menu.active .close {display: block;}
+@media screen and (min-width: 1px) and (max-width:999px){
+  nav{height:100%;overflow-y: scroll;}
+  } 
+@media screen and (min-width: 1000px) and (max-width:1400px){
+    nav .f1{display:flex;}
+    nav {width: 100%;transform: translate(0,-1000px);top: 0;}
+}
+@media screen and (min-width: 1400px){
+  nav{height:100%;overflow-y: scroll;}
+}

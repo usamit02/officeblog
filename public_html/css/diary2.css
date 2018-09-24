@@ -1,0 +1,43 @@
+@charset "utf-8";
+h1 {width: 100%; font-size:large; text-align:center;color:burlywood;padding: 10px;}
+h2 {width: 100%;font-size:large; text-align:left;background-color:skyblue;color:white;padding: 0px 0px 0px 10px;}
+h3 {width: 80%;font-size:large; text-align:left;background-color:plum;color:white;margin:0px 0px 0px 10px;padding: 0px 0px 0px 10px;}
+/*img{flex-shrink:0;}*/
+#main{display:flex;flex-direction:column;}
+.txt{line-height:1.5;padding: 10px;}
+.inlink{display:flex;padding: 10px;}
+.inlinktxt{height:150px;width:400px;vertical-align:middle;padding: 10px;}
+.subindexwarp{display:flex;flex-wrap: wrap;padding: 10px 0px;}
+.subindex{display:flex;padding: 10px 0px;}
+.subtxt{line-height:1.5;padding: 10px;width:230px;}
+.comm{display:flex;}
+#commctl{padding: 20px 0px 0px 0px;} 
+.comminp div{padding: 10px 0px 0px 0px;}
+#commform textarea{width:100%;}
+#village{display:flex;flex-direction:row-reverse;justify-content:space-between;padding: 10px 10px 10px 10px;}
+#sns{display:flex;flex-direction:row-reverse;justify-content:space-between;padding: 10px 10px 10px 10px;}
+#footer{display:flex;flex-wrap: wrap;justify-content:space-between;padding: 10px 10px 10px 10px;}                                
+@media screen and (min-width: 1px) and (max-width:529px){
+  img{max-width:100%;height:auto;}
+  } 
+@media screen and (min-width: 530px) and (max-width:999px){
+img{max-width:100%;height:auto;}
+.comminp{display:flex;}
+}
+@media screen and (min-width: 1000px) and (max-width:1399px){
+ header {display:flex;}
+ header div div {display:flex;} 
+ #main{display:flex;flex-direction:column;}
+ .row{display:flex;flex-direction: row-reverse; justify-content: flex-end;}
+ #main .navi{order:-1;}
+ #commctl{display:flex;} 
+ .comminp{display:flex;}
+}
+@media screen and (min-width: 1400px){
+ header {display:flex;}
+ header div div {display:flex;}
+ #main{display:flex;flex-direction:row;justify-content: flex-start;}
+ #diary{flex:1 1 1100px;padding:10px;float:left;}
+ aside{flex: 1 1 300px;padding:10px;}
+ .row{display:flex;flex-direction: row-reverse; justify-content: flex-end;}
+}

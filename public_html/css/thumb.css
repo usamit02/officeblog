@@ -1,0 +1,19 @@
+ul.thumblist li {
+  list-style: none;
+  margin-left: -20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+}
+.thumblist{display:flex;}
+
+@media screen and (min-width: 1000px) and (max-width:1400px){
+
+
+}
+@media screen and (min-width: 1400px){
+.thumbtext{display:flex;flex-direction: row-reverse;}
+.thumblist{display:flex;flex-direction:column;}
+}
